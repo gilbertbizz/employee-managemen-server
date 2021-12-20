@@ -11,7 +11,10 @@ const Employee = sequelize.define("Employee", {
 		type: Sequelize.STRING,
 		allowNull: false
 	},
-	lastname: {},
+	lastname: {
+		type: Sequelize.STRING,
+		allowNull: false
+	},
 	dateOfBirth: {},
 	address: {},
 	contact: {}
