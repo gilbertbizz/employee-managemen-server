@@ -15,8 +15,12 @@ const Employee = sequelize.define("Employee", {
 		type: Sequelize.STRING,
 		allowNull: false
 	},
-	dateOfBirth: {},
-	address: {},
+	dateOfBirth: {
+		type: Sequelize.STRING
+	},
+	address: {
+		type: Sequelize.STRING
+	},
 	contact: {}
 });
 
