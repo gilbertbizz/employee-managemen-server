@@ -1,11 +1,12 @@
 const Sequelize = require("sequelize");
-const sequelize = require("../db_config.sqlite");
+const sequelize = require("../db_config");
 
-const Employee = sequelize.define("Employee", {
+const Employee = sequelize.define("employee", {
 	id: {
 		type: Sequelize.INTEGER,
 		autoIncrement: true,
-		allowNull: false
+		allowNull: false,
+		primaryKey: true
 	},
 	firstname: {
 		type: Sequelize.STRING,
@@ -21,6 +22,8 @@ const Employee = sequelize.define("Employee", {
 	address: {
 		type: Sequelize.STRING
 	},
-	contact: {}
+	contact: {
+		type: Sequelize.STRING
+	}
 });
 
