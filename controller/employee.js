@@ -54,4 +54,12 @@ const deleteEmployeeById = async (req, res) => {
 	
 }
 
-const 
+
+
+module.exports = {
+	getAllEmployees,
+	getEmployeeById,
+	addEmployee,
+	updateEmployeeById,
+	deleteEmployeeById
+}
